@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useEffect, useState} from "react"
 
 interface User {
   id: number;
@@ -8,7 +8,13 @@ interface User {
 
 export default function UsersPage() {
   const [users, setUsers] = useState<User[]>([])
-  
+
+  useEffect(() => {
+    fetch('/api/users')
+      .then(res => res.json())
+      .then(setUsers)
+  }, [])
+
   return (
     
   )
