@@ -6,6 +6,16 @@ export default function CreateUser() {
   const [email, setEmail] = useState('')
   const router = useRouter()
 
+  const handleSubmit = async (e: React.FormEvent) {
+    e.preventDefault()
+    await fetch('api/users', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name, email}),
+    });
+    router.push('/users');
+  }
+
   return (
     <div className="p-6 max-w-md mx-auto">
       <h1 className="text-xl font-semibold mb-4">Create New User</h1>
