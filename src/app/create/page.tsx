@@ -14,12 +14,19 @@ export default function CreateUser() {
           type="text"
           placeholder="Name"
           value={name}
-          onChange={}
+          onChange={e => setName(e.target.value)}
           className="w-full p-2 border rounded"
           required
         />
-        <input type="text" />
-        <button></button>
+        <input 
+          type="text"
+          placeholder="Email"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          className="w-full p-2 border rounded"
+          required 
+        />
+        <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">Create</button>
       </form>
     </div>
   )
