@@ -35,6 +35,20 @@ export default function UsersPage() {
           <div key={user.id} className="p-4 border rounded shadow-sm">
             <h2 className="font-bold">{user.name}</h2>
             <p>{user.email}</p>
+            <div className="flex gap-2">
+              <button 
+                onClick={() => router.push(`/edit/${user.id}`)}
+                className="px-2 py-1 bg-yellow-400 text-white rounded"
+              >
+                Edit
+              </button>
+              <button
+                onClick={() => router.push(`/delete/${user.id}`)}
+                className="px-2 py-1 bg-red-400 text-white rounded"
+              >
+                Delete
+              </button>
+            </div>
           </div>
         ))}
       </div>
