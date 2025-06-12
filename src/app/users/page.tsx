@@ -1,4 +1,6 @@
-import {useEffect, useState} from "react"
+import { useEffect, useState } from "react"
+import { useRouter } from "next/router";
+import Link from "next/link"
 
 interface User {
   id: number;
@@ -8,11 +10,16 @@ interface User {
 
 export default function UsersPage() {
   const [users, setUsers] = useState<User[]>([])
+  const router = useRouter()
 
-  useEffect(() => {
+  const fetchUsers = () => {
     fetch('/api/users')
       .then(res => res.json())
       .then(setUsers)
+  };
+
+  useEffect(() => {
+    fetchUsers()
   }, [])
 
   return (
