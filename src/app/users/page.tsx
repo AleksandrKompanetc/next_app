@@ -43,7 +43,7 @@ export default function UsersPage() {
                 Edit
               </button>
               <button
-                onClick={() => router.push(`/delete/${user.id}`)}
+                onClick={() => handleDelete(user.id)}
                 className="px-2 py-1 bg-red-400 text-white rounded"
               >
                 Delete
