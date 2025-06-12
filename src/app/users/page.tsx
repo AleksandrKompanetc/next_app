@@ -22,6 +22,11 @@ export default function UsersPage() {
     fetchUsers()
   }, [])
 
+  const handleDelete = async (id: number) {
+    await fetch(`/api/users/${id}`, {method: 'DELETE'})
+    fetchUsers()
+  }
+
   return (
     <div className="p-6">
       <h1 className="text-xl font-semibold mb-4">Users</h1>
