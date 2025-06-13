@@ -5,3 +5,6 @@ let users = [
   {id: 2, name: 'Bob', email: 'bob@example.com'}
 ]
 
+export defaule function handler() {
+  
+}
