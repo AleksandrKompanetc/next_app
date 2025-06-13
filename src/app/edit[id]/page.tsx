@@ -9,7 +9,7 @@ export default function EditUser() {
 
   useEffect(() => {
     if (id) {
-      fetch(`api/users/${id}`)
+      fetch(`/api/users/${id}`)
         .then(res => res.json)
         .then(data => {
           setName(data.name)
@@ -17,4 +17,16 @@ export default function EditUser() {
         })
     }
   }, [id])
+
+  const handleSubmit = async (e:React.FormEvent) => {
+    e.preventDefault()
+    await fetch(`/api/users/${id}`, {
+      method: 'PUT',
+      headers: {'Content-Type' : 'application/json'},
+      body: JSON.stringify({name, email})
+    });
+    router.push('/users')
+  }
+
+  return ()
 }
