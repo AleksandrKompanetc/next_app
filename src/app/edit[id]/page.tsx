@@ -28,5 +28,12 @@ export default function EditUser() {
     router.push('/users')
   }
 
-  return ()
+  return (
+    <div className='p-6 max-w-md mx-auto'>
+      <h1 className='text-xl font-semibold mb-4'>Edit User</h1>
+      <form onSubmit={handleSubmit} className='space-y-4'>
+        
+      </form>
+    </div>
+  )
 }
