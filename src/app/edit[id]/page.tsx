@@ -32,7 +32,25 @@ export default function EditUser() {
     <div className='p-6 max-w-md mx-auto'>
       <h1 className='text-xl font-semibold mb-4'>Edit User</h1>
       <form onSubmit={handleSubmit} className='space-y-4'>
-        
+        <input 
+          type="text"
+          placeholder="Name"
+          value={name}
+          onChange={e => setName(e.target.value)}
+          className='w-full p-2 border rounded'
+          required 
+        />
+        <input 
+          type="text"
+          placeholder='Email'
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          className='w-full p-2 border rounded'
+          required 
+        />
+        <button type='submit' className='bg-blue-600 text-white px-4 py-2 rounded'>
+          Save
+        </button>
       </form>
     </div>
   )
