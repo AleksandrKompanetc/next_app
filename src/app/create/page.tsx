@@ -36,7 +36,9 @@ export default function CreateUser() {
           className="w-full p-2 border rounded"
           required 
         />
-        <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">Create</button>
+        <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">
+          Create
+        </button>
       </form>
     </div>
   )
