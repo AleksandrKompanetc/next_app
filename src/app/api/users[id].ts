@@ -30,7 +30,10 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     case 'DELETE':
       const id = parseInt(req.query.id as string)
       if(!id) {
-        
+        res.status(400).json({message: 'User ID is required'})
+        return
       }
+
+      users = users.filter(user => user.id !== id)
   }
 }
