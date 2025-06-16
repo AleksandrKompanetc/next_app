@@ -8,6 +8,7 @@ let users = [
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   switch (req.method) {
     case 'GET':
-      res.status()
+      res.status(200).json(users)
+      break
   }
 }
