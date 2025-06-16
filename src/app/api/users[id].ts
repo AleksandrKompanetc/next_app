@@ -5,6 +5,9 @@ let users = [
   {id: 2, name: 'Bob', email: 'bob@example.com'}
 ]
 
-export defaule function handler() {
-  
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+  switch (req.method) {
+    case 'GET':
+      res.status()
+  }
 }
