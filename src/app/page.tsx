@@ -19,6 +19,9 @@ export default function Home() {
           <input className={style.input} type="text" placeholder="Add Todo" />
           <button className={style.button}><AiOutlinePlus size={30} /></button>
         </form>
+        <ul>
+          
+        </ul>
       </div>
     </div>
   );
