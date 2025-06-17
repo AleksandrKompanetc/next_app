@@ -7,7 +7,9 @@ const style = {
 export default function Home() {
   return (
     <div className={style.bg}>
-      
+      <div className={style.container}>
+        <h3 className={style.heading}>Todo App</h3>
+      </div>
     </div>
   );
 }
