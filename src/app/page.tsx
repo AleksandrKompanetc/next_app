@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState } from "react";
 import { AiOutlinePlus } from 'react-icons/ai';
 
 const style = {
@@ -11,6 +12,8 @@ const style = {
 }
 
 export default function Home() {
+  const [todos, setTodos] = useState([])
+  
   return (
     <div className={style.bg}>
       <div className={style.container}>
@@ -20,7 +23,7 @@ export default function Home() {
           <button className={style.button}><AiOutlinePlus size={30} /></button>
         </form>
         <ul>
-          
+
         </ul>
       </div>
     </div>
