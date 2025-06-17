@@ -9,6 +9,10 @@ export default function Home() {
     <div className={style.bg}>
       <div className={style.container}>
         <h3 className={style.heading}>Todo App</h3>
+        <form className={style.form}>
+          <input className={style.input} type="text" placeholder="Add Todo" />
+          <button className={style.button}></button>
+        </form>
       </div>
     </div>
   );
