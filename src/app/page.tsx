@@ -1,9 +1,13 @@
 import Image from "next/image";
 
+const style = {
+  bg: `h-screen w-screen p-4 bg-gradient-to-r from-[#2F80ED] to-[#1CB5E0]`
+}
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center text-green-600 justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1 className="text-3xl font-bold">Home page</h1>
+    <div className={style.bg}>
+      
     </div>
   );
 }
