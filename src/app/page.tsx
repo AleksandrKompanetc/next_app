@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import { useState } from "react";
 import { AiOutlinePlus } from 'react-icons/ai';
@@ -24,7 +26,9 @@ export default function Home() {
           <button className={style.button}><AiOutlinePlus size={30} /></button>
         </form>
         <ul>
-          <Todo />
+          {todos.map((todo, index) => (
+            <Todo key={index} todo={todo} />
+          ))}
         </ul>
       </div>
     </div>
