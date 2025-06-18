@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { AiOutlinePlus } from 'react-icons/ai';
+import Todo from "@/components/Todo";
 
 const style = {
   bg: `h-screen w-screen p-4 bg-gradient-to-r from-[#2F80ED] to-[#1CB5E0]`,
@@ -12,8 +13,8 @@ const style = {
 }
 
 export default function Home() {
-  const [todos, setTodos] = useState([])
-  
+  const [todos, setTodos] = useState(['Learn React', 'Grint Leetcode'])
+
   return (
     <div className={style.bg}>
       <div className={style.container}>
@@ -23,7 +24,7 @@ export default function Home() {
           <button className={style.button}><AiOutlinePlus size={30} /></button>
         </form>
         <ul>
-
+          <Todo />
         </ul>
       </div>
     </div>
