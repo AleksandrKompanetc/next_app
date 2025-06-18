@@ -12,6 +12,7 @@ const style = {
   form: ``,
   input: ``,
   button: ``,
+  count: ``,
 }
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
             <Todo key={index} todo={todo} />
           ))}
         </ul>
+        <p className={style.count}>You have 2 todos</p>
       </div>
     </div>
   );
