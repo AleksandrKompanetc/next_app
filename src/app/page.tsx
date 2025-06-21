@@ -1,9 +1,11 @@
 "use client"
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlinePlus } from 'react-icons/ai';
 import Todo from "@/components/Todo";
+import { db } from './firebase';
+import { query, collection } from 'firebase/firestore';
 
 const style = {
   bg: `h-screen w-screen p-4 bg-gradient-to-r from-[#2F80ED] to-[#1CB5E0]`,
@@ -17,6 +19,10 @@ const style = {
 
 export default function Home() {
   const [todos, setTodos] = useState(['Learn React', 'Grint Leetcode'])
+
+  useEffect(() => {
+    const q = query(collection(db, "todos"))
+  }, [])
 
   return (
     <div className={style.bg}>
