@@ -18,7 +18,7 @@ const style = {
 }
 
 export default function Home() {
-  const [todos, setTodos] = useState(['Learn React', 'Grint Leetcode'])
+  const [todos, setTodos] = useState([])
 
   useEffect(() => {
     const q = query(collection(db, "todos"))
