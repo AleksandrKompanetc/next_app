@@ -5,8 +5,11 @@ const Main = () => {
   const [movies, setMovies] = useState([])
 
   useEffect(() => {
-    axios.get()
-  })
+    axios.get(requests.requestPopular).then((response) => {
+      setMovies(response.data)
+    })
+  }, [])
+  console.log(movies)
 
   return (
     <div>
