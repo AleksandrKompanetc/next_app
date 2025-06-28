@@ -1,7 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 const Main = () => {
   const [movies, setMovies] = useState([])
+
+  useEffect(() => {
+    
+  })
 
   return (
     <div>
