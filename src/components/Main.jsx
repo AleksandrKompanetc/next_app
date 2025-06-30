@@ -14,8 +14,10 @@ const Main = () => {
   console.log(movies)
 
   return (
-    <div>
-      Main
+    <div className='w-full h-[550px] text-white'>
+      <div className='w-full h-full'>
+        <img src="" alt={movie?.title} />
+      </div>
     </div>
   )
 }
