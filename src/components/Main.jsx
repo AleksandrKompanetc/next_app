@@ -18,6 +18,10 @@ const Main = () => {
       <div className='w-full h-full'>
         <div className='absolute w-full h-[550px] bg-gradient-to-r from-black'></div>
         <img className='w-full h-full object-cover' src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} />
+        <div>
+          <button>Play</button>
+          <button>Watch later</button>
+        </div>
       </div>
     </div>
   )
