@@ -5,7 +5,16 @@ import { submitUser } from '../services/api'
 
 export const UserForm = () => {
   const { register, handleSubmit, formState: { errors} } = useForm<User>()
-  const [submited, setSubmited] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
+
+  const onSubmit = async (data: User) => {
+    try {
+      await submitUser(data)
+      setSubmitted(true)
+    } catch (error) {
+      console.error('Error', error)
+    }
+  }
 
   return (
     <div className='max-w-md mx-auto mt-10 p-4 bg-white rounded-xl shadow'>
