@@ -33,6 +33,7 @@ export const UserForm = () => {
         <button type='submit' className='bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded'>
           Send
         </button>
+        {submitted && <p className='text-green-500 text-sm'>User created successfully!</p>}
       </form>
     </div>
   )
