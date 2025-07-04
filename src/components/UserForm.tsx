@@ -30,6 +30,9 @@ export const UserForm = () => {
           <input {...register('email', { required: true })} className='w-full border rounded px-3 py-2' />
           {errors.email && <p className='text-red-500 text-sm'>Email is required</p>}
         </div>
+        <button type='submit' className='bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded'>
+          Send
+        </button>
       </form>
     </div>
   )
