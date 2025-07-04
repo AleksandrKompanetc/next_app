@@ -21,7 +21,9 @@ export const UserForm = () => {
       <h2 className='text-2xl font-bold mb-4'>User Form</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='mb-4'>
-          
+          <label className='block mb-1'>Name</label>
+          <input {...register('name', { required: true})} className='w-full boredr rounded px-3 py-2' />
+          {errors.name && <p className='text-red-500 text-sm'>Name is required</p>}
         </div>
       </form>
     </div>
