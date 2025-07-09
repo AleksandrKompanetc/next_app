@@ -6,8 +6,8 @@ export default function LoginPage() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-      <input type="text" />
-      <input type="text" />
+      <input {...register('email')} type="email" placeholder="Email" className="border p-2 w-full" />
+      <input type="password" />
       <button></button>
     </form>
   )
