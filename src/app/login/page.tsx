@@ -1,5 +1,6 @@
 "use client"
 import { useForm } from "react-hook-form"
+import { signIn } from "next-auth/react"
 
 export default function LoginPage() {
   const { register, handleSubmit } = useForm()
