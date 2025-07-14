@@ -15,7 +15,15 @@ export default function Home() {
             <div className="ml-2 rounded-full border border-zinc-800 bg-zinc-900/80 px-2 py-0.5 text-xs">v1.0</div>
           </div>
           <nav className="hidden md:flex md:gap-6 absolute left-1/2 transform -translate-x-1/2">
-            
+            <Link href="#features" className="text-sm text-zinc-400 transition-all duration-300 hover:text-white relative after:absolute after:bottom-[-5px] after:left-0 after:h-[2px] after:W-0 after:bg-blue-500 ">
+              Возможности
+            </Link>
+            <Link href="#pricing" className="">
+              Тарифы
+            </Link>
+            <Link href="#contact" className="">
+              Контакты
+            </Link>
           </nav>
         </div>
       </header>
