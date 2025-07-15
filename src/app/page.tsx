@@ -33,6 +33,11 @@ export default function Home() {
           </div>
         </div>
       </header>
+      <main className="flex-1">
+        <section className="relative overflow-hidden">
+
+        </section>
+      </main>
     </div>
   );
 }
