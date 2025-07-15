@@ -27,7 +27,9 @@ export default function Home() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-
+            <Button size="sm" className="h-8 bg-gradient-to-r from-blue-500 to-blue-600 text-white hover:from-blue-600 hover:to-blue-700 transition-all duration-300 hover:shadow-md hover:shadow-blue-500/20" >
+              Sign In
+            </Button>
           </div>
         </div>
       </header>
