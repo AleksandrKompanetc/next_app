@@ -34,8 +34,8 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="relative overflow-hidden">
-
+        <section className="relative overflow-hidden bg-gradient-to-b from-black via-zinc-950 to-zinc-900/95 py-20 md:py-32">
+          <div className="absolute inset-0 "></div>
         </section>
       </main>
     </div>
