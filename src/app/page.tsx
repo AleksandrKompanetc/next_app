@@ -3,6 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import {Globe} from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
               Контакты
             </Link>
           </nav>
+          <div className="flex items-center gap-4">
+
+          </div>
         </div>
       </header>
     </div>
