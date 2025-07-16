@@ -50,7 +50,13 @@ export default function Home() {
                   Наиболее эффективный PWA сервис на рынке
                 </span>
               </h1>
-              
+              <p className="mb-10 max-w-2xl text-zinc-400 md:text-xl">
+                META-PWA помогает создавать молниеносные, работающие офлайн прогрессивные веб-приложения, которые 
+                обезпечивают пользователям опит близкий к нативному.
+              </p>
+              <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
+                <Button className=""></Button>
+              </div>
             </div>
           </div>
         </section>
