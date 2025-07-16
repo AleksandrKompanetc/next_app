@@ -68,7 +68,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+        <section id="features" className=""></section>
       </main>
     </div>
   );
