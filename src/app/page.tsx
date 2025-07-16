@@ -63,10 +63,12 @@ export default function Home() {
                     <Star key={i} className="h-4 w-4 fill-white text-white" />
                   ))}
                 </div>
+                <span className="text-sm text-zinc-400">Используется 50+ разработчиками</span>
               </div>
             </div>
           </div>
         </section>
+        
       </main>
     </div>
   );
