@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import {Globe} from "lucide-react"
+import { Globe, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
@@ -56,6 +56,13 @@ export default function Home() {
               </p>
               <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
                 <Button className="h-12 bg-gradient-to-r from-blue-500 to-blue-600 px-8 text-white hover:from-blue-600 hover:to-blue-700 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">Создать PWA</Button>
+              </div>
+              <div className="flex items-center justify-center gap-2">
+                <div className="flex items-center ">
+                  {[1,2,3,4,5].map((i) => (
+                    <Star key={i} className="h-4 w-4 fill-white text-white" />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
