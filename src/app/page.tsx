@@ -55,7 +55,7 @@ export default function Home() {
                 обезпечивают пользователям опит близкий к нативному.
               </p>
               <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
-                <Button className=""></Button>
+                <Button className="h-12 bg-gradient-to-r from-blue-500 to-blue-600 px-8 text-white hover:from-blue-600 hover:to-blue-700 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">Создать PWA</Button>
               </div>
             </div>
           </div>
