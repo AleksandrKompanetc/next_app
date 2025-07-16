@@ -40,7 +40,8 @@ export default function Home() {
             <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
               <div className="mb-4 rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-xs transition-all duration-300 hover:border-blue-500 hover:bg-zinc-800">
                 META-PWA v1.0 уже доступно {" "}
-                <Link href="#" className="">
+                <Link href="#" className="ml-1 text-blue-400 hover:underline">
+                  Узнать больше →
                 </Link>
               </div>
             </div>
