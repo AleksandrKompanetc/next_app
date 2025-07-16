@@ -35,7 +35,16 @@ export default function Home() {
       </header>
       <main className="flex-1">
         <section className="relative overflow-hidden bg-gradient-to-b from-black via-zinc-950 to-zinc-900/95 py-20 md:py-32">
-          <div className="absolute inset-0 "></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(64,64,64,0.1),transparent_60%)] animate-pulse-slow"></div>
+          <div className="relative px-4 md:px-6">
+            <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
+              <div className="mb-4 rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-xs transition-all duration-300 hover:border-blue-500 hover:bg-zinc-800">
+                META-PWA v1.0 уже доступно {" "}
+                <Link href="#" className="">
+                </Link>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
