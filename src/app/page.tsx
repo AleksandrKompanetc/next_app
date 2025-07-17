@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Globe, Star } from "lucide-react"
+import { Globe, Star, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
