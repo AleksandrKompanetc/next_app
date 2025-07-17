@@ -84,6 +84,15 @@ export default function Home() {
                 разработанный командой профессионалов с богатым опытом.
               </p>
             </div>
+            <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+              <div className="col-span-1 md:col-span-2 rounded-xl border border-zinc-800 bg-gradient-to-br from-zinc-900/90 via-blue-950/20 to-zinc-900/80 p-6 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-blue-900/20 group cursor-pointer">
+                <div className="flex items-start gap-4">
+                  <div>
+                    <Zap />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           </div>
         </section>
