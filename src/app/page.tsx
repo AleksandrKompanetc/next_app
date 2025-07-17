@@ -68,7 +68,18 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="features" className=""></section>
+        <section id="features" className="relative bg-gradient-to-b from-zinc-900/95 via-black to-zinc-950/95 py-20 md:py-32">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(59,130,246,0.05),transparent_60%)]">
+          <div className="px-4 md:px-6 relative z-10">
+            <div className="mx-auto max-w-2xl text-center">
+              <div className="mb-4 inline-block rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-xs transition-all duration-300 hover:border-blue-500 hover:bg-zinc-800">
+                Возможности
+              </div>
+              <h2 className="mb-4 text-3xl font-bold "></h2>
+            </div>
+          </div>
+          </div>
+        </section>
       </main>
     </div>
   );
