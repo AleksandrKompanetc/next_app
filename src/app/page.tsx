@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Globe, Star, Zap, Download, Wrench, Code, LayoutPanelLeft, Rocket, BellPlus } from "lucide-react"
+import { Globe, Star, Zap, Download, Wrench, Code, LayoutPanelLeft, Rocket, BellPlus, Apple } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
@@ -179,6 +179,24 @@ export default function Home() {
                     <div className="mt-4">
                       <h3 className="mb-2 text-xl font-medium">Уникальная система настройки пушей</h3>
                       <p className="text-sm text-zinc-200">Полная настройка пушей под любые нужды.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  className="col-span-1 md:col-span-2 rounded-xl border border-zinc-800 bg-gradient-to-br from-zinc-900/90 via-sky-950/20 to-zinc-900/80 p-6 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-sky-900/20 group cursor-pointer"
+                  onClick={() => window.open("https://t.me/metapwa", "_blank")}
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="mb-4 min-w-[3rem] flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 group-hover:bg-blue-500/20 transition-all duration-300 group-hover:scale-110">
+                      <Apple className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="mb-2 text-xl font-medium">Кросс-платформенность</h3>
+                      <p className="text-sm text-zinc-400">
+                        Работает на всех современных браузерах и устройствах с встроенным адаптивным дизайном.
+                        Ваше приложение будет безупречно выглядеть и функционировать на любом устройстве от смартфонов до десктопов.
+                      </p>
                     </div>
                   </div>
                 </div>
