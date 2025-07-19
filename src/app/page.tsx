@@ -85,10 +85,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
-                <div
-                  className="col-span-1 md:col-span-2 rounded-xl border border-zinc-800 bg-gradient-to-br from-zinc-900/90 via-blue-950/20 to-zinc-900/80 p-6 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-blue-900/20 group cursor-pointer"
-                  onClick={() => window.open("https://t.me/metapwa", "_blank")}
-                >
+                <div className="col-span-1 md:col-span-2 rounded-xl border border-zinc-800 bg-gradient-to-br from-zinc-900/90 via-blue-950/20 to-zinc-900/80 p-6 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-blue-900/20 group cursor-pointer">
                   <div className="flex items-start gap-4">
                     <div className="mb-4 min-w-[3rem] flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 group-hover:bg-blue-500/20 transition-all duration-300 group-hover:scale-110">
                       <Zap className="h-6 w-6" />
@@ -103,11 +100,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Feature 2 - Regular Tile */}
-                <div
-                  className="rounded-xl border border-zinc-800 bg-gradient-to-br from-zinc-900/90 via-purple-950/20 to-zinc-900/80 p-6 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-purple-900/20 group cursor-pointer"
-                  onClick={() => window.open("https://t.me/metapwa", "_blank")}
-                >
+                <div className="rounded-xl border border-zinc-800 bg-gradient-to-br from-zinc-900/90 via-purple-950/20 to-zinc-900/80 p-6 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-purple-900/20 group cursor-pointer">
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 group-hover:bg-blue-500/20 transition-all duration-300 group-hover:scale-110">
                     <Download className="h-6 w-6" />
                   </div>
@@ -117,7 +110,6 @@ export default function Home() {
                   </p>
                 </div>
 
-                {/* Achievement 1 */}
                 <div
                   className="rounded-xl border border-zinc-800 bg-gradient-to-br from-zinc-900/90 via-emerald-950/20 to-zinc-900/80 p-6 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-emerald-900/20 group cursor-pointer"
                   onClick={() => window.open("https://t.me/metapwa", "_blank")}
@@ -132,6 +124,20 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+
+                <div
+                  className="rounded-xl border border-zinc-800 bg-gradient-to-br from-zinc-900/90 via-indigo-950/20 to-zinc-900/80 p-6 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-indigo-900/20 group cursor-pointer"
+                  onClick={() => window.open("https://t.me/metapwa", "_blank")}
+                >
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 group-hover:bg-blue-500/20 transition-all duration-300 group-hover:scale-110">
+                    <Code className="h-6 w-6" />
+                  </div>
+                  <h3 className="mb-2 text-xl font-medium">Современный стек</h3>
+                  <p className="text-sm text-zinc-400">
+                    Создано с использованием React, Next.js и современных веб-API для перспективной разработки.
+                  </p>
+                </div>
+
               </div>
             </div>
           </div>
