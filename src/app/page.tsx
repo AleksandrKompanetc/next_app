@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Globe, Star, Zap, Download, Wrench, Code, LayoutPanelLeft, Rocket } from "lucide-react"
+import { Globe, Star, Zap, Download, Wrench, Code, LayoutPanelLeft, Rocket, BellPlus } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
@@ -166,6 +166,21 @@ export default function Home() {
                   <p className="text-sm text-zinc-400">
                     Круглосуточная поддержка, мы всегда готовы помочь с любыми вопросами и проблемами в любое время.
                   </p>
+                </div>
+
+                <div
+                  className="rounded-xl border border-zinc-800 bg-gradient-to-br from-zinc-900/90 via-rose-950/20 to-zinc-900/80 p-6 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-rose-900/20 group cursor-pointer"
+                  onClick={() => window.open("https://t.me/metapwa", "_blank")}
+                >
+                  <div className="flex h-full flex-col justify-between">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 group-hover:bg-blue-500/20 transition-all duration-300 group-hover:scale-110">
+                      <BellPlus className="h-6 w-6" />
+                    </div>
+                    <div className="mt-4">
+                      <h3 className="mb-2 text-xl font-medium">Уникальная система настройки пушей</h3>
+                      <p className="text-sm text-zinc-200">Полная настройка пушей под любые нужды.</p>
+                    </div>
+                  </div>
                 </div>
 
               </div>
