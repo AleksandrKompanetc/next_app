@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Globe, Star, Zap, Download, Wrench, Code } from "lucide-react"
+import { Globe, Star, Zap, Download, Wrench, Code, LayoutPanelLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
@@ -136,6 +136,23 @@ export default function Home() {
                   <p className="text-sm text-zinc-400">
                     Создано с использованием React, Next.js и современных веб-API для перспективной разработки.
                   </p>
+                </div>
+
+                <div
+                  className="col-span-1 md:col-span-2 rounded-xl border border-zinc-800 bg-gradient-to-br from-zinc-900/90 via-amber-950/20 to-zinc-900/80 p-6 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-amber-900/20 group cursor-pointer"
+                  onClick={() => window.open("https://t.me/metapwa", "_blank")}
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex min-w-[3rem] h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 group-hover:bg-blue-500/20 transition-all duration-300 group-hover:scale-110">
+                      <LayoutPanelLeft className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="mb-2 text-lg font-medium">Кастомные решения для премиум пользователей</h3>
+                      <p className="text-sm text-zinc-200">
+                        Индивидуальные настройки, уникальные функции и эксклюзивный доступ для пользователей, ценящих высокий уровень сервиса и качества.
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
               </div>
