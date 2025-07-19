@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Globe, Star, Zap, Download, Wrench, Code, LayoutPanelLeft, Rocket, BellPlus, Apple } from "lucide-react"
+import { Globe, Star, Zap, Download, Wrench, Code, LayoutPanelLeft, Rocket, BellPlus, Apple, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
@@ -199,6 +199,19 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
+                </div>
+
+                <div
+                  className="rounded-xl border border-zinc-800 bg-gradient-to-br from-zinc-900/90 via-teal-950/20 to-zinc-900/80 p-6 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-teal-900/20 group cursor-pointer"
+                  onClick={() => window.open("https://t.me/metapwa", "_blank")}
+                >
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 group-hover:bg-blue-500/20 transition-all duration-300 group-hover:scale-110">
+                    <CheckCircle className="h-6 w-6" />
+                  </div>
+                  <h3 className="mb-2 text-xl font-medium">SEO-оптимизация</h3>
+                  <p className="text-sm text-zinc-400">
+                    Встроенные лучшие практики SEO и рендеринг на стороне сервера для максимальной обнаруживаемости.
+                  </p>
                 </div>
 
               </div>
