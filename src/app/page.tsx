@@ -76,7 +76,7 @@ export default function Home() {
                   Возможности
                 </div>
                 <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">
-                  Все необходимое для создания современных PWA
+                  Всё необходимое для создания современных PWA
                 </h2>
                 <p className="mb-10 text-zinc-400 md:text-lg">
                   META-PWA предоставляет комплексный набор инструментов для создания, оптимизации и развертывания
@@ -218,6 +218,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section id="why-us" className="hidden relative bg-gradient-to-b from-zinc-950/95 via-zinc-900/70 to-black/95 py-20 md:py-32"></section>
       </main>
     </div>
   );
