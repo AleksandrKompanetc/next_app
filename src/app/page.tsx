@@ -233,6 +233,9 @@ export default function Home() {
                   Мы создали META-PWA с фокусом на опыт разработчика, производительность и удовлетворенность
                   пользователей.
                 </p>
+                <ul className="space-y-6">
+                  
+                </ul>
               </div>
             </div>
           </div>
