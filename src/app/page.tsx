@@ -226,7 +226,9 @@ export default function Home() {
                 <div className="mb-4 inline-block rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-xs transition-all duration-300 hover:border-blue-500 hover:bg-zinc-800">
                   Почему выбирают нас
                 </div>
-                <h2></h2>
+                <h2 className="mb-6 text-3xl font-bold tracking-tight md:text-4xl">
+                  Что отличает META-PWA от конкурентов
+                </h2>
               </div>
             </div>
           </div>
