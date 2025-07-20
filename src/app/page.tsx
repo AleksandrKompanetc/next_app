@@ -218,7 +218,19 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="why-us" className="hidden relative bg-gradient-to-b from-zinc-950/95 via-zinc-900/70 to-black/95 py-20 md:py-32"></section>
+        <section id="why-us" className="hidden relative bg-gradient-to-b from-zinc-950/95 via-zinc-900/70 to-black/95 py-20 md:py-32">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(59,130,246,0.05),transparent_50%)]"></div>
+          <div className="container mx-auto px-4 md:px-6 relative z-10">
+            <div className="grid gap-12 md:grid-cols-2">
+              <div>
+                <div className="mb-4 inline-block rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-xs transition-all duration-300 hover:border-blue-500 hover:bg-zinc-800">
+                  Почему выбирают нас
+                </div>
+                <h2></h2>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
