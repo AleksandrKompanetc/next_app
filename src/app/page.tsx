@@ -229,6 +229,10 @@ export default function Home() {
                 <h2 className="mb-6 text-3xl font-bold tracking-tight md:text-4xl">
                   Что отличает META-PWA от конкурентов
                 </h2>
+                <p className="mb-8 text-zinc-400 md:text-lg">
+                  Мы создали META-PWA с фокусом на опыт разработчика, производительность и удовлетворенность
+                  пользователей.
+                </p>
               </div>
             </div>
           </div>
