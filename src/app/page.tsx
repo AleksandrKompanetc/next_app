@@ -266,7 +266,10 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <Image
                   src="/image.png"
-
+                  width={800}
+                  height={600}
+                  alt="META-PWA в действии"
+                  className="w-full rounded-xl object-cover relative z-10 transform rotate-3 hover:rotate-0 transition-transform duration-500"
                 />
               </div>
             </div>
