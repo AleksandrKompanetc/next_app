@@ -249,10 +249,21 @@ export default function Home() {
                       description:
                         "Мы постоянно обновляем нашу платформу, внедряя последние веб-технологии и лучшие практики.",
                     },
-                  ].map()
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-4">
+                      <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-500/10 text-blue-400">
+                        <CheckCircle className={`h-4 w-4 ${i % 2 === 0 ? 'rotate-12' : '-rotate-12'} transition-transform duration-300 hover:rotate-0`} />
+                      </div>
+                      <div>
+                        <h3 className="mb-1 font-medium">{item.title}</h3>
+                        <p className="text-sm text-zinc-400">{item.description}</p>
+                      </div>
+                    </li>
+                  ))
                   }
                 </ul>
               </div>
+              
             </div>
           </div>
         </section>
