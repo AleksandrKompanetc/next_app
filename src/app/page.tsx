@@ -275,6 +275,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section id="pricing"></section>
       </main>
     </div>
   );
