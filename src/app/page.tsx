@@ -263,7 +263,12 @@ export default function Home() {
                   }
                 </ul>
               </div>
-              
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/image.png"
+
+                />
+              </div>
             </div>
           </div>
         </section>
