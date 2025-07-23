@@ -279,7 +279,9 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(59,130,246,0.05),transparent_60%)]"></div>
           <div className="px-4 md:px-6 relative z-10">
             <div className="mx-auto max-w-2xl text-center">
-              <div className="mb-4 inline-block rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-xs"></div>
+              <div className="mb-4 inline-block rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-xs transition-all duration-300 hover:border-blue-500 hover:bg-zinc-800">
+                Тарифы
+              </div>
             </div>
           </div>
         </section>
