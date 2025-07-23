@@ -275,7 +275,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="pricing"></section>
+        <section id="pricing" className="relative bg-gradient-to-b from-black-95 via-zinc-950/90 to-zinc-900/95 py-20 md:py-32">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(59,130,246,0.05),transparent_60%)]"></div>
+          <div className="px-4 md:px-6 relative z-10">
+            <div className="mx-auto max-w-2xl text-center">
+              <div className="mb-4 inline-block rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-xs"></div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
