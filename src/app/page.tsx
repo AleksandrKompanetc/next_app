@@ -284,7 +284,7 @@ export default function Home() {
               </div>
               <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">Простые и прозрачные цены</h2>
               <p className="mb-10 text-zinc-400 md:text-lg">
-                
+                Выберите план, который подходит для вашего проекта. Все планы включают основные функции.
               </p>
             </div>
           </div>
