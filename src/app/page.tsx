@@ -287,6 +287,14 @@ export default function Home() {
                 Выберите план, который подходит для вашего проекта. Все планы включают основные функции.
               </p>
             </div>
+            <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-3">
+              {[
+                {
+                  name: "Стартовый",
+                  price:
+                }
+              ]}
+            </div>
           </div>
         </section>
       </main>
