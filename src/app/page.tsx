@@ -339,7 +339,17 @@ export default function Home() {
                       Популярный
                     </div>
                   )}
-                  
+                  <div className="mb-4">
+                    <h3 className="text-xl font-medium">{plan.name}</h3>
+                    <div className="mt-2 flex items-baseline">
+                      <span className="text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">{plan.price}</span>
+                      <span className="ml-1 text-sm text-zinc-400">/ {plan.period}</span>
+                    </div>
+                    <p className="mt-2 text-sm text-zinc-400">{plan.description}</p>
+                  </div>
+                  <ul className="mb-6 space-y-3">
+                    
+                  </ul>
                 </div>
               ))
               }
