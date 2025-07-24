@@ -368,7 +368,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="contact"></section>
+        <section id="contact" className="relative bg-gradient-to-b from-zinc-900/95 to-black py-30 md:py-32">
+          <div className="absolute inset-0"></div>
+        </section>
       </main>
     </div>
   );
