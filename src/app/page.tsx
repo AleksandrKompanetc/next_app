@@ -348,11 +348,23 @@ export default function Home() {
                     <p className="mt-2 text-sm text-zinc-400">{plan.description}</p>
                   </div>
                   <ul className="mb-6 space-y-3">
-                    
+                    {plan.features.map((feature, j) => (
+                      <li key={j} className="flex items-center gap-2 text-sm">
+                        <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-500/10 text-blue-400 group-hover:bg-blue-500/20 transition-all duration-300">
+                          <CheckCircle h-3 w-3 />
+                        </div>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
                   </ul>
+                  <Button
+                    className="w-full transition-all duration-300 mt-auto bg-blue-500 text-white hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/20"
+                    onClick={() => window.open("https://t.me/metapwa", "_blank")}
+                  >
+                    Связаться с отделом продаж
+                  </Button>
                 </div>
-              ))
-              }
+              ))}
             </div>
           </div>
         </section>
