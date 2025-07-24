@@ -329,7 +329,13 @@ export default function Home() {
                   gradient: "from-zinc-900/95 via-purple-950/10 to-zinc-900/80"
                 },
               ].map((plan, i) => (
-                <div></div>
+                <div
+                  key={i}
+                  className={`relative rounded-xl border flex flex-col h-full ${plan.popular ? "border-blue-500/70" : "border-zinc-800/70"} bg-gradient-to-br ${plan.gradient} p-6 backdrop-blur-sm hover:shadow-lg ${plan.popular ? "hover:shadow-blue-900/30" : "hover:shadow-indigo-900/10"} transition-all duration-300 hover:translate-y-[-5px] group cursor-pointer`}
+                  onClick={() => window.open("https://t.me/metapwa", "_blank")}
+                >
+                  
+                </div>
               ))
               }
             </div>
