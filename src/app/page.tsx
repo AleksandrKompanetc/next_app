@@ -334,6 +334,11 @@ export default function Home() {
                   className={`relative rounded-xl border flex flex-col h-full ${plan.popular ? "border-blue-500/70" : "border-zinc-800/70"} bg-gradient-to-br ${plan.gradient} p-6 backdrop-blur-sm hover:shadow-lg ${plan.popular ? "hover:shadow-blue-900/30" : "hover:shadow-indigo-900/10"} transition-all duration-300 hover:translate-y-[-5px] group cursor-pointer`}
                   onClick={() => window.open("https://t.me/metapwa", "_blank")}
                 >
+                  {plan.popular && (
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-blue-500 px-3 py-1 text-xs font-medium shadow-lg shadow-blue-500/20">
+                      Популярный
+                    </div>
+                  )}
                   
                 </div>
               ))
