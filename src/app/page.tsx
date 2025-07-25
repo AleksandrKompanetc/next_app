@@ -376,6 +376,7 @@ export default function Home() {
                 <div className="mb-4 inline-block rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-xs transition-all duration-300 hover:border-blue-500 hover:bg-zinc-800">
                   Свяжитесь с нами
                 </div>
+                <h2 className="mb-6 text-3xl font-bold tracking-tight md:text-4xl">Свяжитесь с нашей командой</h2>
               </div>
             </div>
           </div>
