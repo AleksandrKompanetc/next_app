@@ -380,7 +380,65 @@ export default function Home() {
                 <p className="mb-8 text-zinc-400 md:text-lg">
                   Есть вопросы о META-PWA? Наша команда готова помочь вам начать работу.
                 </p>
+                <div className="space-y-6">
+                  {[
+                    {
+                      icon: (
+                        <svg 
+                          xmlns="http://www.w3.org/2000/svg" 
+                          width="24" 
+                          height="24" 
+                          viewBox="0 0 24 24" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
+                          className="h-5 w-5"
+                        >
+                          <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /><path d="m21.854 2.147-10.94 10.939" />
+                        </svg>
+                      ),
+                      title: "Телеграм",
+                      content: "@metapwa",
+                    },
+                    {
+                      icon: (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="h-5 w-5"
+                        >
+                          <rect width="20" height="16" x="2" y="4" rx="2" />
+                          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                      ),
+                      title: "Email",
+                      content: "creatorpwa@gmail.com",
+                    },
+                  ].map((contact, i) => (
+                    <div key={i} className="flex items-start gap-4">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-zinc-800 text-blue-400">
+                        {contact.icon}
+                      </div>
+                      <div>
+                        <h3 className="font-medium" >{contact.title}</h3>
+                        <p className="text-sm text-zinc-400">
+                          <a href="https://t.me/metapwa" target="_blank" className="text-sm text-zinc-400">{contact.content}</a>
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
+              <div></div>
             </div>
           </div>
         </section>
