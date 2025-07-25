@@ -438,7 +438,11 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              <div></div>
+              <div>
+                <div className="rounded-xl border border-zinc-800 bg-black p-6 cursor-pointer" onClick={() => window.open("https://t.me/metapwa", "_blank")}>
+                  <h3 className="mb-4 text-xl font-medium">Отправьте нам сообщение</h3>
+                </div>
+              </div>
             </div>
           </div>
         </section>
