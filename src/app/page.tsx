@@ -377,6 +377,9 @@ export default function Home() {
                   Свяжитесь с нами
                 </div>
                 <h2 className="mb-6 text-3xl font-bold tracking-tight md:text-4xl">Свяжитесь с нашей командой</h2>
+                <p className="mb-8 text-zinc-400 md:text-lg">
+                  Есть вопросы о META-PWA? Наша команда готова помочь вам начать работу.
+                </p>
               </div>
             </div>
           </div>
