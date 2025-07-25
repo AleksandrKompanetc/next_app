@@ -372,7 +372,11 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(circle at 59% 30%,rgba(59,130,246,0.05),transparent 0%)]"></div>
           <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="grid gap-12 md:grid-cols-2">
-
+              <div>
+                <div className="mb-4 inline-block rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-xs transition-all duration-300 hover:border-blue-500 hover:bg-zinc-800">
+                  Свяжитесь с нами
+                </div>
+              </div>
             </div>
           </div>
         </section>
