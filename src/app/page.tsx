@@ -483,7 +483,27 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="border-zinc-800/30">
+      <footer className="border-zinc-800/30 bg-gradient-to-b from-black to-zinc-950 py-8">
+        <div className="flex flex-col items-center justify-between gap-4 px-4 md:flex-row md:px-6">
+          <div className="flex items-center gap-2">
+            <Globe className="h-5 w-5" />
+            <span className="text-sm font-medium">META-PWA</span>
+          </div>
+          <p className="text-center text-xs text-zinc-500 md:text-left">
+            &copy; {new Date().getFullYear()} META-PWA. Все права защищены.
+          </p>
+          <div className="flex gap-4">
+            <Link href="#" className="text-xs text-zinc-500 hover:text-white">
+              Условия
+            </Link>
+            <Link href="#" className="text-xs text-zinc-500 hover:text-white">
+              Конфиденциальность
+            </Link>
+            <Link href="#" className="text-xs text-zinc-500 hover:text-white">
+              Cookies
+            </Link>
+          </div>
+        </div>
       </footer>
     </div>
   );
