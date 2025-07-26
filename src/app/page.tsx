@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Globe, Star, Zap, Download, Wrench, Code, LayoutPanelLeft, Rocket, BellPlus, Apple, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 
 export default function Home() {
   return (
