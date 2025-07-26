@@ -4,6 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Globe, Star, Zap, Download, Wrench, Code, LayoutPanelLeft, Rocket, BellPlus, Apple, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Input
 
 export default function Home() {
   return (
@@ -441,6 +442,40 @@ export default function Home() {
               <div>
                 <div className="rounded-xl border border-zinc-800 bg-black p-6 cursor-pointer" onClick={() => window.open("https://t.me/metapwa", "_blank")}>
                   <h3 className="mb-4 text-xl font-medium">Отправьте нам сообщение</h3>
+                  <form className="space-y-4">
+                    <div>
+                      <label htmlFor="name" className="mb-2 block text-sm font-medium">
+                        Имя
+                      </label>
+                      <Input
+                        id="name"
+                        placeholder="Введите ваше имя"
+                        className="border-zinc-800 bg-zinc-900 text-white placeholder:text-zinc-500"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="mb-2 block text-sm font-medium">
+                        Email
+                      </label>
+                      <Input
+                        id="email"
+                        type="email"
+                        placeholder="Введите ваш email"
+                        className="border-zinc-800 bg-zinc-900 text-white placeholder:text-zinc-500"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="message" className="mb-2 block text-sm font-medium">
+                        Сообщение
+                      </label>
+                      <Textarea
+                        id="message"
+                        placeholder="Введите ваше сообщение"
+                        className="min-h-[120px] border-zinc-800 bg-zinc-900 text-white placeholder:text-zinc-500"
+                      />
+                    </div>
+                    <Button className="w-full bg-blue-500 hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/20" onClick={() => window.open("https://t.me/metapwa", "_blank")}>Отправить сообщение</Button>
+                  </form>
                 </div>
               </div>
             </div>
