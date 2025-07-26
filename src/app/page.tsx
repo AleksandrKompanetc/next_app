@@ -483,6 +483,8 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <footer className="border-zinc-800/30">
+      </footer>
     </div>
   );
 }
