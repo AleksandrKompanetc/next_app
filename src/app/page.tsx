@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Globe, Star, Zap, Download, Wrench, Code, LayoutPanelLeft, Rocket, BellPlus, Apple, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import Input
+import { Input } from "@/components/ui/input"
 
 export default function Home() {
   return (
